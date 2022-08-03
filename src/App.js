@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Header, Card, Button } from './components';
+import { sampleData } from './constants/sampleData';
 
-function App() {
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='px-[85px] py-[108px]'>
+      <Header />
+
+      <div className='my-[80px] grid lg:grid-cols-3 md:grid-cols-1'>
+        {sampleData.map((data, index) => (
+          <Card key={index} data={data} />
+        ))}
+      </div>
+
+      <div className='flex justify-center'>
+        <Button />
+      </div>
     </div>
   );
-}
-
-export default App;
+};
