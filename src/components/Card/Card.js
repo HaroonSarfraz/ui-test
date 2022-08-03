@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from '../../assets/images';
 
 const Card = ({ data }) => (
-  <div className='h-72 md:h-[336px] mx-[15px] my-[20px] flex bg-white filter drop-shadow-lg rounded-lg'>
+  <div className='h-72 md:h-[336px] md:w-[438px] mx-[15px] my-[20px] flex bg-white filter drop-shadow-lg rounded-lg'>
     <img
       alt='home'
       src={Image}
