@@ -4,10 +4,10 @@ import { sampleData } from './constants/sampleData';
 
 export const App = () => {
   return (
-    <div className='px-[85px] py-[108px]'>
+    <div className='px-2 md:px-[85px] py-20 md:py-[108px]'>
       <Header />
 
-      <div className='my-[80px] grid lg:grid-cols-3 md:grid-cols-1'>
+      <div className='my-[80px] grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3'>
         {sampleData.map((data, index) => (
           <Card key={index} data={data} />
         ))}
